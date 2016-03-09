@@ -25,14 +25,14 @@
         <!--TMDB Favorite Actors-->
         <scene sceneID="0R1-Jo-xe2">
             <objects>
-                <tableViewController id="xPX-6u-N8R" customClass="FavoriteActorViewController" customModule="FavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xPX-6u-N8R" customClass="FavoriteActorViewController" customModule="TMDBFavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" id="aAH-Du-nA2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.47417087409999997" blue="0.28953513559999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="85" id="TY2-zU-xf8" customClass="ActorTableViewCell" customModule="FavoriteActors" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="85" id="TY2-zU-xf8" customClass="ActorTableViewCell" customModule="TMDBFavoriteActors" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TY2-zU-xf8" id="h9v-Xx-za9">
@@ -40,10 +40,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DkR-Kq-rZz">
-                                            <rect key="frame" x="8" y="7" width="59" height="69"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yr8-Xg-sPZ">
-                                            <rect key="frame" x="8" y="7" width="59" height="69"/>
+                                            <rect key="frame" x="8" y="7" width="46" height="69"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aT-8m-mO8">
                                             <rect key="frame" x="88" y="24" width="504" height="36"/>
@@ -51,6 +48,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yr8-Xg-sPZ">
+                                            <rect key="frame" x="8" y="7" width="46" height="69"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -78,7 +78,7 @@
         <!--Movie List View Controller-->
         <scene sceneID="ufH-Ld-c9s">
             <objects>
-                <tableViewController storyboardIdentifier="MovieListViewController" id="1vZ-Cl-SBE" customClass="MovieListViewController" customModule="FavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MovieListViewController" id="1vZ-Cl-SBE" customClass="MovieListViewController" customModule="TMDBFavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="154" sectionHeaderHeight="22" sectionFooterHeight="22" id="KZE-gW-eA9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                             <items/>
                         </toolbar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="154" id="cdH-xz-TMR" customClass="TaskCancelingTableViewCell" customModule="FavoriteActors" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="154" id="cdH-xz-TMR" customClass="TaskCancelingTableViewCell" customModule="TMDBFavoriteActors" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="154"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cdH-xz-TMR" id="Fgx-uA-Pb5">
@@ -111,7 +111,7 @@
         <!--Actor Picker View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="ActorPickerViewController" id="vXZ-lx-hvc" customClass="ActorPickerViewController" customModule="FavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActorPickerViewController" id="vXZ-lx-hvc" customClass="ActorPickerViewController" customModule="TMDBFavoriteActors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
