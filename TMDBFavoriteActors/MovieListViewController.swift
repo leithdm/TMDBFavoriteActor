@@ -71,6 +71,7 @@ class MovieListViewController : UITableViewController {
 	// MARK: - Table View
 	
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+				print(actor.movies.count)
 		return actor.movies.count
 	}
 	

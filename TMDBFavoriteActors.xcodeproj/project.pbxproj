@@ -147,8 +147,8 @@
 		4DBBE6EF1A7D72C100347323 /* TheMovieDB */ = {
 			isa = PBXGroup;
 			children = (
-				4DBBE6F01A7D72C100347323 /* Movie.swift */,
 				4DBBE6F11A7D72C100347323 /* Person.swift */,
+				4DBBE6F01A7D72C100347323 /* Movie.swift */,
 				4DBBE6FC1A7D742B00347323 /* Config.swift */,
 				4DBBE6F21A7D72C100347323 /* TheMovieDB-Constants.swift */,
 				4DBBE6F41A7D72C100347323 /* TheMovieDB.swift */,
